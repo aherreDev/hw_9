@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
+    <title>Hw9</title>
+  </head>
+
+  <body>
+    <div class="container is-fluid">
+      <h1 class="is-size-1">Central de autobuses</h1>
+      <div class="columns">
+        <div class="column">
+          <form>
+            <div class="box">
+              <div class="is-size-3">Crear base</div>
+
+              <div class="field">
+                <label class="label" for="text">Introduce el nombre de una base:</label>
+                <div class="control">
+                  <input class="input" type="text" id="nombreBase" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="text">Introduce el tiempo de recorrido de la base:</label>
+                <div class="control">
+                  <input class="input" type="number" id="tiempoBase" />
+                </div>
+              </div>
+              <input class="button" type="button" value="Agregar base" id="btnAdd" />
+            </div>
+
+            <div class="box">
+              <div class="is-size-3">Busqueda</div>
+              <div class="field">
+                <label class="label" for="text">Buscar una base:</label>
+                <div class="control">
+                  <input class="input" type="text" id="buscarBase" />
+                </div>
+              </div>
+              <input class="button" type="button" value="Buscar base" id="btnSearch" />
+            </div>
+            <div class="box">
+              <div class="is-size-3">Eliminar base</div>
+              <div class="field">
+                <label class="label" for="text">Base:</label>
+                <div class="control">
+                  <input class="input" type="text" id="eliminarBase" />
+
+                </div>
+
+              </div>
+              <input class="button" type="button" value="Eliminar" id="btnDelete" />
+            </div>
+
+            <div class="box">
+              <div class="is-size-3">Imprimir</div>
+              <input class="button" type="button" value="Imprimir bases" id="btnPrint" />
+            </div>
+
+            <div class="box">
+              <div class="is-size-3">Recorrido</div>
+              <div class="field">
+                <label class="label" for="text">Base inicio:</label>
+                <div class="control">
+                  <input class="input" type="text" id="baseInicio" />
+
+                </div>
+
+              </div>
+              <div class="field">
+                <label class="label" for="text">Hora inicio:</label>
+                <div class="control">
+                  <input class="input" type="number" id="horaInicio" />
+                </div>
+
+              </div>
+              <div class="field">
+                <label class="label" for="text">Hora fin:</label>
+                <div class="control">
+                  <input class="input" type="number" id="horaFin" />
+
+                </div>
+
+              </div>
+              <input class="button" type="button" value="Crear recorrido" id="btnCreateRoad" />
+            </div>
+
+          </form>
+        </div>
+        <!-- Lista -->
+
+        <div class="column">
+          <ul id="list" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" type="module"></script>
+</html>
